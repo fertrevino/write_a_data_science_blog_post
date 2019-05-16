@@ -6,3 +6,4 @@ This repository contains an in depth analysis of the Stackoverflow 2017 survey r
 
 The dataset used for this project can be found [here](https://insights.stackoverflow.com/survey)
 
+Visit the [blog post](https://fertrevino.github.io/write_a_data_science_blog_post/) dedicated to the results obtained by this repository.
