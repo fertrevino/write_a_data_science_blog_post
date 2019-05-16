@@ -18,12 +18,19 @@ In this post, we will answer the following questions using the Cross-Industry St
 
 
 ### What are the most popular programming languages in different countries? 
+![Alt text](resources/language_chart_Germany.png?raw=true "Most popular programing languages in Germany (2017)")
+![Alt text](resources/language_chart_United_Kingdom.png?raw=true "Most popular programing languages in United Kingdom (2017)")
+![Alt text](resources/language_chart_United_States.png?raw=true "Most popular programing languages in United States (2017)")
 
 
 ### What is the correlation between programming language, experience and salary?
+![Alt text](resources/mean_salary_popular_language_for_experience.png?raw=true "Salary as function of experience for popular programming languages (2017)")
+
+
 
 
 ### What is the most popular occupation for the respondents?
+![Alt text](resources/developer_types.png?raw=true "Most common developer types (2017)")
 
 
 
