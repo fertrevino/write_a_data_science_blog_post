@@ -19,7 +19,9 @@ In this post, we will answer the following questions using the Cross-Industry St
 
 ### What are the most popular programming languages in different countries? 
 ![Alt text](resources/language_chart_Germany.png?raw=true "Most popular programing languages in Germany (2017)")
+
 ![Alt text](resources/language_chart_United_Kingdom.png?raw=true "Most popular programing languages in United Kingdom (2017)")
+
 ![Alt text](resources/language_chart_United_States.png?raw=true "Most popular programing languages in United States (2017)")
 
 
