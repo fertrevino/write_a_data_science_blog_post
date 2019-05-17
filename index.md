@@ -65,33 +65,4 @@ An important remark here is data scientist. Despite being a new area, there are 
 
 
 ### Conclusions
-
-
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/fertrevino/github_page/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Data science can help us understand collected data, which at first sight might seem astract and as a colleciton of values. An ordered and standarized analysis of the data, such as by following CRISP-DM, can throw meaningful insights to people interested in taking a decision. Such people can be a stakeholder in a company or an individual looking into choosing a career. Therefore, a proper understanding of the data collected, the background of the business and the necessary software techonlogy is essential in today's world. Without a doubt, data science is hardcoded deep into the society of the future.
