@@ -1,4 +1,4 @@
-## Stackoverflow 2017 survey results analysis
+# Stackoverflow 2017 survey results analysis
 
 Stackoverflow.com, a cornerstone in most software developers' work, has released its survey [results for the year 2017](https://insights.stackoverflow.com/survey). With more than 50k respondents from around the world, it is worth analyzing the results. Which insights can we gain? Continue reading and find out! 
 
@@ -26,22 +26,28 @@ The survey results from Stackoverflow include the country of origin for the resp
 
 There are 3 countries which interest me: Germany, United States and the United Kingdom. The reason for choosing Germany and the United Kingdom is because I have lived in those countries, while the United States is a suitable option since it is a country with leading innnovation in the software industry.
 
-The following three images show the results for these countries.
+The respondents in Germany mentioned to be experienced in the following programming languages, ranked by number of mentions.
 
 ![Alt text](resources/language_chart_Germany.png?raw=true "Most popular programing languages in Germany (2017)")
 
+As we can see, the 2 most popular programming languages are JavaScript and Java. Interestingly, both start with the same 4 letters despite being unrelated to each other. That is certainly a sympatic coincidence. One runs commonly in browser applications while ther other is a versatile and multipurpose programming language. 
+
+Let us have a look at what respondents in the United Kingdom mentioned by looking at the image below.
+
 ![Alt text](resources/language_chart_United_Kingdom.png?raw=true "Most popular programing languages in United Kingdom (2017)")
+
+It seems that Java is not the second most popular programming language but SQL is. Does this mean that there are more database administrators in the United Kingdom? Perhaps. The programming language used to analyze this data, Python, is within the top 5 for both the United Kingdom and Germany. Let us have a look at the results from respondents in the United States with the image below.
 
 ![Alt text](resources/language_chart_United_States.png?raw=true "Most popular programing languages in United States (2017)")
 
+Surprisingly, JavaScript wins again! Who would have thought. There seems to be a global boom in jobs requiring to develop code using this langauge. Please notice the increase in respondents for the United States. The most popular programming language in this country has more than 5000 thousand mentions. That is more than the mentions for JavaScript in Germany and the United Kingdom combined. This makes sense considering that Stackoverflow is a website with content in English and because the United States is the hub for software development.
 
 ### What is the correlation between programming language, experience and salary?
-We have already seen that the popularity of programming languages is similar around the world. Another question worth investiating is knowing the relationship between programming language, experience, and salary.
+We have already seen that the popularity of programming languages is similar around the world. Another question worth investiating is knowing the relationship between programming language, experience, and salary.he 
 
 It is expected, that experience is correlated with salary. The more experienced a developer is, the higher the salary. However, is this a linear relationship or is it a corrlation? Do all programming languages pay equally? Let us find out.
 
 For this analysis, we have looked two additional pieces of data from the survey: years of experience coding and salary. We combined these two pieces of information with the programming language declared in the previous question, but this time for all countries. The results of this data processing are shown in the following chart.
-
 
 ![Alt text](resources/mean_salary_popular_language_for_experience.png?raw=true "Salary as function of experience for popular programming languages (2017)")
 
