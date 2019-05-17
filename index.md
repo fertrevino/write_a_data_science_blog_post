@@ -4,7 +4,7 @@ Stackoverflow.com, a cornerstone in most software developers' work, has released
 
 ![Alt text](resources/stack_overflow_image_logo.png?raw=true "Stackoverflow survery logo")
 
-### Introduction
+## Introduction
 Software development is becoming more popular every year. More and more people are interested in starting a career in this field. Others who are already working in this field, are curious about the global trends in this technology sector. Hence the Stackoverflow survey results are of interest for newcomers and expereinced programmers.
 
 What can we learn? After a meta analysis of the results, I have concluded that the following questions can be answered by analyzing the data programatically. Check out the Github [repository](https://github.com/fertrevino/write_a_data_science_blog_post) containing all the code used for this analysis.
@@ -19,7 +19,7 @@ We can observe that the 3 countries have a similar trend regarding the most popu
 
 Based on the results of these questions, it is reasonable to assume that trends in popular programming languages are global.
 
-### What are the most popular programming languages in different countries? 
+## What are the most popular programming languages in different countries? 
 As a person who has lived in different countries, I tend to compare the culture of one place with another. Work culture and trends are no the exception for this. Therefore I wonder, are the programming language the same popular in different countries? Let us find out!
 
 The survey results from Stackoverflow include the country of origin for the respondents as well as languages with which they are familiar. We can therefore choose a desired country, count how many developers have worked with each programming language available and rank the results. An important consideration for this is, that a respondent may be experienced in more than one programming language, which has been taken care for this data processing.
@@ -42,7 +42,7 @@ It seems that Java is not the second most popular programming language but SQL i
 
 Surprisingly, JavaScript wins again! Who would have thought. There seems to be a global boom in jobs requiring to develop code using this langauge. Please notice the increase in respondents for the United States. The most popular programming language in this country has more than 5000 thousand mentions. That is more than the mentions for JavaScript in Germany and the United Kingdom combined. This makes sense considering that Stackoverflow is a website with content in English and because the United States is the hub for software development.
 
-### What is the correlation between programming language, experience and salary?
+## What is the correlation between programming language, experience and salary?
 We have already seen that the popularity of programming languages is similar around the world. Another question worth investiating is knowing the relationship between programming language, experience, and salary.he 
 
 It is expected, that experience is correlated with salary. The more experienced a developer is, the higher the salary. However, is this a linear relationship or is it a corrlation? Do all programming languages pay equally? Let us find out.
@@ -56,7 +56,7 @@ We can confirm with the graph above that salary is *correlated* with experience.
 Regarding the programming langauges we see again a correlation. From the popular languages, PHP tends to have the lowest salary regardless of the programming experience. On the other hand, we can see that Python tends to have the highest salary at any point across the years of experience. This would imply that Python developers, regardless of their experience, were in high demand in 2017. The rest of the programming languages (Java, SQL, JavaScript and C#) show a similar salary variation with respect to experience.
 
 
-### What is the most popular occupation for the respondents?
+## What is the most popular occupation for the respondents?
 Software development itself is a wide industry. There are game developers, embedded system programmers, smarthphone application developers and data scientists, just to name a few. Therefore, it is interesting to know what are the most popular occupations of the survey respondents.
 
 To achieve these, the question regarding the *developer type* in the survey has been considered. The following bar plot show the results of this analysis.
@@ -70,5 +70,5 @@ An additional observation is that there are more database administrators than sy
 An important remark here is data scientist. Despite being a new area, there are more respondents with this occupation than other older occupations such as graphics programming, grafic designer and quality assurance. Surprising! Machine learning specialist is not so common in this survey. It is a sure bet to say that machine learning specialists occupations will be more common in the next years!
 
 
-### Conclusions
+## Conclusions
 Data science can help us understand collected data, which at first sight might seem astract and as a colleciton of values. An ordered and standarized analysis of the data, such as by following CRISP-DM, can throw meaningful insights to people interested in taking a decision. Such people can be a stakeholder in a company or an individual looking into choosing a career. Therefore, a proper understanding of the data collected, the background of the business and the necessary software techonlogy is essential in today's world. Without a doubt, data science is hardcoded deep into the society of the future.
