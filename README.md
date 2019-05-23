@@ -12,6 +12,6 @@ Visit the [blog post](https://fertrevino.github.io/write_a_data_science_blog_pos
 
 You can download this repository with the following command:
 
-```Bash
+```Shell
 git@github.com:fertrevino/write_a_data_science_blog_post.git
 ```
