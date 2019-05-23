@@ -1,4 +1,4 @@
-# Stackoverflow 2017 survey results analysis
+# What were the trends in software development in 2017 according to Stackoverflow users?
 Stackoverflow.com, a cornerstone in most software developers' work, has released its survey [results for the year 2017](https://insights.stackoverflow.com/survey). With more than 50k respondents from around the world, it is worth analyzing the results. Which insights can we gain? Continue reading and find out! 
 
 ![Alt text](resources/stack_overflow_image_logo.png?raw=true "Stackoverflow survery logo")
