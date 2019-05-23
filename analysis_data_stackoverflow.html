@@ -11805,7 +11805,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Import necessary packages</span>
@@ -11825,7 +11825,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Load the csv data</span>
@@ -11840,7 +11840,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total number of questions in survey: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">results_schema</span><span class="p">)))</span>
@@ -12155,7 +12155,7 @@ Sample of the results schema:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">is_in_germany</span> <span class="o">=</span> <span class="n">results_public</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Germany&#39;</span>
@@ -12204,9 +12204,18 @@ Number of respondents in United States: 11455
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The programming langauges on which developers have worked is a categorial variable. Since a developer can have experience with more than one programming language, we must extract all the programming languages (categories) for each developer by splitting the corresponding string as shown in the function below.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">create_langauage_chart</span><span class="p">(</span><span class="n">country</span><span class="p">,</span> <span class="n">results_public_country</span><span class="p">):</span>
@@ -12215,7 +12224,7 @@ Number of respondents in United States: 11455
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Number of respondents&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">font_size</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Most popular programming languages in &#39;</span> <span class="o">+</span> <span class="n">country</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">font_size</span><span class="p">)</span>
-    <span class="n">worked_language</span> <span class="o">=</span> <span class="n">results_public_country</span><span class="p">[</span><span class="s1">&#39;HaveWorkedLanguage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;; &#39;</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">stack</span><span class="p">()</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+    <span class="n">worked_language</span> <span class="o">=</span> <span class="n">results_public_country</span><span class="p">[</span><span class="s1">&#39;HaveWorkedLanguage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;; &#39;</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">stack</span><span class="p">()</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span> <span class="c1">#Extract categories</span>
     <span class="n">worked_language</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">font_size</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;resources/language_chart_&#39;</span> <span class="o">+</span> <span class="n">country</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;_&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;.png&#39;</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
 </pre></div>
@@ -12227,7 +12236,7 @@ Number of respondents in United States: 11455
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">create_langauage_chart</span><span class="p">(</span><span class="s1">&#39;Germany&#39;</span><span class="p">,</span> <span class="n">results_public_germany</span><span class="p">)</span>
@@ -12324,14 +12333,14 @@ Number of respondents in United States: 11455
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Prepare-Data">Prepare Data<a class="anchor-link" href="#Prepare-Data">&#182;</a></h2><p>We can start the preparatino of the results of this question by defining a general functino in which we insert a list of languages and it will show a graph in which the salary will be plotted across the years of experience for each language in the list.</p>
+<h2 id="Prepare-Data">Prepare Data<a class="anchor-link" href="#Prepare-Data">&#182;</a></h2><p>We can start the preparatino of the results of this question by defining a general functino in which we insert a list of languages and it will show a graph in which the salary will be plotted across the years of experience for each language in the list. In this case, the years of experience is a categorical value representing a range.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">create_salary_chart_for_language</span><span class="p">(</span><span class="n">language_list</span><span class="p">,</span> <span class="n">results_dataframe</span><span class="p">):</span>
@@ -12381,7 +12390,7 @@ Number of respondents in United States: 11455
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">results_experience_available</span> <span class="o">=</span> <span class="n">results_public</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;YearsCodedJob&#39;</span><span class="p">])</span>
@@ -12452,20 +12461,20 @@ Number of respondents in United States: 11455
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Prepare-Data">Prepare Data<a class="anchor-link" href="#Prepare-Data">&#182;</a></h2><p>We can define a function in which we give the general dataframe of the survey results and it generates a bar chart with the most popoular occupations.</p>
+<h2 id="Prepare-Data">Prepare Data<a class="anchor-link" href="#Prepare-Data">&#182;</a></h2><p>We can define a function in which we give the general dataframe of the survey results and it generates a bar chart with the most popoular occupations For this question, we must drop the empty values for those developers who have not answered their occupation type, as shown in the image below. The developer type is a categorical value, and each category is a potential bar in the bar plot.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">plot_popular_occupations</span><span class="p">(</span><span class="n">results_public</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Plot bar plot with the most popular developer types&quot;&quot;&quot;</span>
     <span class="n">font_size</span> <span class="o">=</span> <span class="mi">20</span>
-    <span class="n">results_developer_type_available</span> <span class="o">=</span> <span class="n">results_public</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;DeveloperType&#39;</span><span class="p">])</span>
+    <span class="n">results_developer_type_available</span> <span class="o">=</span> <span class="n">results_public</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;DeveloperType&#39;</span><span class="p">])</span> <span class="c1">#Drop empty values</span>
     <span class="n">results_developer_type_available</span><span class="p">[</span><span class="s1">&#39;DeveloperType&#39;</span><span class="p">]</span>
     <span class="n">developer_type</span> <span class="o">=</span> <span class="n">results_developer_type_available</span><span class="p">[</span><span class="s1">&#39;DeveloperType&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;; &#39;</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">stack</span><span class="p">()</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
@@ -12491,7 +12500,7 @@ Number of respondents in United States: 11455
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plot_popular_occupations</span><span class="p">(</span><span class="n">results_public</span><span class="p">)</span>
